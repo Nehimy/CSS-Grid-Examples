@@ -1,20 +1,9 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Open Sans"),
-    url("/fonts/Lato/Lato-Boldtalic.ttf") format("woff2"),
-    url("/fonts/Lato/Lato-Thin.ttf") format("woff");
-}
-
-
 body{
     background: #414558;
 }
 
 
-.container-element {
+.parent-element {
     display: grid;
     grid-gap: 5px;
     justify-content: center;
@@ -32,7 +21,7 @@ body{
     font-size: 50px;
 }
 
-.container-title{
+.title{
     color:#ffb74a;
     font-weight: bold;
     font-size: 25px;
@@ -41,4 +30,17 @@ body{
 
 .font-style{
     font-family: 'Acme', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open Sans"),
+    url("/fonts/opensans.woff2") format("woff2"),
+    url("/fonts/opensans.woff") format("woff"),
+    url("/fonts/opensans.ttf") format("truetype"),
+    url("/fonts/opensans.otf") format("opentype");
 }
