@@ -10,9 +10,55 @@ Es una propiedad de CSS que establece los tipos de visualización interna y exte
 
 Definimos display como grid en los contenedores. Esto habilita todas las propiedades de grid explícitas e implícitas.
 
-
+** Ejemplo
 #+begin_src css
 .container-element {
     display: grid;
 }
+#+end_src
+
+* Propiedad grid-gap
+ Esta propiedad de grid genera espacio entre los elementos para ello podemos usar siguientes  unidades de miedida: px, %,em,vh,vw, etc.
+
+** Unidades de longitud relativa
+ em:           Tamaño de letra del elemento padre, en el caso de propiedades tipográficas como font-size, y
+                    tamaño de la fuente del propio elemento en el caso de otras propiedades, como width.
+ex: 	        Altura x de la fuente del elemento.
+ch: 	        La medida de avance (ancho) del glifo "0" de la letra del elemento.
+rem:           Tamaño de la letra del elemento raíz.
+lh:    	        Altura de la línea del elemento.
+vw:   	        1% del ancho de la ventana gráfica.
+vh:         	1% de la altura de la ventana gráfica.
+vmin: 	1% de la dimensión más pequeña de la ventana gráfica.
+vmax: 	1% de la dimensión más grande de la ventana gráfica.
+
+** Unidades de longitud absoluta
+
+cm 	Centímetros 	                1cm = 96px/2,54
+mm 	Milímetros 	                        1mm = 1/10 de 1cm
+Q 	Cuartos de milímetros 	1Q = 1/40 de 1cm
+in 	Pulgadas 	                        1in = 2,54cm = 96px
+pc 	Picas 	                                1pc = 1/6 de 1in
+pt 	Puntos 	                                1pt = 1/72 de 1in
+px 	Píxeles 	                                1px = 1/96 de 1in
+
+** Ejemplo
+ #+begin_src css
+ .container-element {
+     display: grid;
+     grid-gap: 10px;
+ }
+#+end_src
+
+* Propiedad justify-content
+ Esta propiedad define cómo el navegador distribuye el espacio entre y alrededor de los elementos a lo largo del eje principal de su contenedor.
+
+** Ejemplo
+
+ #+begin_src css
+ .container-element {
+     display: grid;
+     grid-gap: 10px;
+     justify-content: center;
+ }
 #+end_src
