@@ -1,0 +1,18 @@
+#+title: Notes CSS Grid
+
+CSS Grid es utilizado para ordenar y/o alinear el diseño de una página web.
+
+* ¿Qué es display?
+
+Es una propiedad de CSS que establece los tipos de visualización interna y externa de un elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna establece el layout(Diseño) de los hijos.
+
+*  Display de tipo grid
+
+Definimos display como grid en los contenedores. Esto habilita todas las propiedades de grid explícitas e implícitas.
+
+
+#+begin_src css
+.container-element {
+    display: grid;
+}
+#+end_src

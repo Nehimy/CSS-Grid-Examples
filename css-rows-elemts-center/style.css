@@ -1,0 +1,36 @@
+body{
+    /*background: #414558;*/
+}
+
+
+.container-element {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.square{
+    background:#ff80bf;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.container-title{
+    color:#ffb74a;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.font-style{
+    font-family: 'Acme', sans-serif;
+}
