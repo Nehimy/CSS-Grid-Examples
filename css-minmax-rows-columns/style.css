@@ -1,27 +1,19 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Open Sans"),
-    url("/fonts/Lato/Lato-Boldtalic.ttf") format("woff2"),
-    url("/fonts/Lato/Lato-Thin.ttf") format("woff");
-}
-
-
 body{
-    background: #414558;
+    /*background: #414558;*/
 }
 
 
 .container-element {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 15px;
     justify-content: center;
     align-content: center;
-    height: 100vh;
-    grid-auto-flow: column;
+    grid-template-rows: minmax(400px,1fr) 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr minmax(600px,1fr);
+    justify-items: center;
 
 }
 
