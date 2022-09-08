@@ -1,4 +1,4 @@
-#+title: Notes CSS Grid
+#+title:  CSS Grid Notes
 
 CSS Grid es utilizado para ordenar y/o alinear el diseño de una página web.
 
@@ -51,9 +51,13 @@ px 	Píxeles 	                                1px = 1/96 de 1in
 #+end_src
 
 * Propiedad justify-content
- Esta propiedad define cómo el navegador distribuye el espacio entre y alrededor de los elementos a lo largo del eje principal de su contenedor.
+ Esta propiedad define cómo el navegador distribuye el espacio entre y alrededor de los elementos
+ a lo largo del eje principal de su contenedor.
 
-** Ejemplo
+~Nota:~ Los ejemplos del 1 al 5 son alineados en el eje horizontal, esto puede causar
+ dudas debido a que los elementos estan ordenados de forma vertical por defecto.
+
+** Ejemplo 1 propieda center
 
  #+begin_src css
  .container-element {
@@ -61,4 +65,78 @@ px 	Píxeles 	                                1px = 1/96 de 1in
      grid-gap: 10px;
      justify-content: center;
  }
+#+end_src
+
+** Ejemplo 2 propiedad start
+Alinea los elementos al lado izquierdo (left).
+
+ #+begin_src css
+ .container-element {
+     display: grid;
+     grid-gap: 10px;
+     justify-content: start;
+ }
+#+end_src
+
+** Ejemplo 3 propiedad end
+Alinea los elementos al lado derecho (right).
+
+ #+begin_src css
+ .container-element {
+     display: grid;
+     grid-gap: 10px;
+     justify-content: end;
+ }
+#+end_src
+
+** Ejemplo 4 propiedad space-between
+Es curioso en lugar de tener todo el espacio del contenedor, toma solo
+el espacio nestricamente necesario, como carne al vacío.
+
+ #+begin_src css
+ .container-element {
+     display: grid;
+     height: 100vh;
+     width: 100vw;
+     justify-content: space-between;
+ }
+#+end_src
+
+** Ejemplo 5 propiedad space-around
+Parce que centra los elementos en el eje horizontal.
+
+ #+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: space-around;
+  }
+#+end_src
+
+~Nota:~ ¿globales?+++++++++++++++++++
+** Ejemplo 6 propiedad initial
+Parece que deja los elementos en su estado por defecto, lo probé en =flex= y =grid=
+con =flex= por defectotodo queda en horizontal con espacios en tre los elementos, mientras que en =grid=
+queda en vertical y ambos al lado izquierdo (left).
+#+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: initial;
+  }
+#+end_src
+
+** Ejemplo 7 propiedad inherit
+~Inherit: Eredar~
+ Al definir un atributo como inherit estamos diciendo que ese algo hereda el valor de el atributo del contenedor padre.
+
+ #+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: inherit;
+  }
 #+end_src
