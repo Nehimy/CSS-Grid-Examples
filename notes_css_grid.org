@@ -114,8 +114,34 @@ Parce que centra los elementos en el eje horizontal.
   }
 #+end_src
 
-~Nota:~ ¿globales?+++++++++++++++++++
-** Ejemplo 6 propiedad initial
+** Ejemplo 6 propiedad space-evenly
+Distribuir elementos uniformemente, los elementos tienen el mismo espacio alrededor de ellos.
+
+ #+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: space-evenly;
+  }
+#+end_src
+
+** Ejemplo 7 propiedad stretch
+Distribuir elementos uniformemente, estira los elementos de tamaño 'automático' para
+que quepan en el contenedor.
+ #+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: stretch;
+  }
+#+end_src
+
+
+~Nota:~ Globales, alinea todos los elementos
+
+** Ejemplo 1  propiedad initial
 Parece que deja los elementos en su estado por defecto, lo probé en =flex= y =grid=
 con =flex= por defectotodo queda en horizontal con espacios en tre los elementos, mientras que en =grid=
 queda en vertical y ambos al lado izquierdo (left).
@@ -128,7 +154,7 @@ queda en vertical y ambos al lado izquierdo (left).
   }
 #+end_src
 
-** Ejemplo 7 propiedad inherit
+** Ejemplo 2 propiedad inherit
 ~Inherit: Eredar~
  Al definir un atributo como inherit estamos diciendo que ese algo hereda el valor de el atributo del contenedor padre.
 
@@ -140,3 +166,18 @@ queda en vertical y ambos al lado izquierdo (left).
       justify-content: inherit;
   }
 #+end_src
+
+** Ejemplo 3  propiedad unset
+~unset: desarmar~
+
+
+
+#+begin_src css
+  .container-element {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+      justify-content: unset;
+  }
+#+end_src
+~Nota: Vertical~
