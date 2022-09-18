@@ -22,7 +22,7 @@ body{
 }
 
 .square{
-    background:#ff63b0;
+    background:#ffb830;
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -44,8 +44,8 @@ body{
     font-family: 'Secular One', sans-serif;
 }
 
-.light-chocolate{
-    background: #845c5c;
+.light-lightblue{
+    background: #00d4ff;
 }
 
 .container-element .one {
