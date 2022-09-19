@@ -76,99 +76,73 @@ body {
 }
 
 .size {
-    width: 0px;
-    height: 0px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     /* background: #ff63c9; */
 
     grid-column: 1/2;
     grid-row: 1/2;
 }
+.circle {
+    /* border-right: 100px solid #ca0000; */
+    /* border-left: 100px solid #ca0000; */
+    /* border-bottom: 100px solid #ca0000; */
+    /* border-top: 100px solid #ca0000; */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: blue;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
 .cone1 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #ca0000;
+    background: red;
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
 
 }
 
 .cone2 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #05009b;
-    transform: rotate(-98deg) translate(-50px,-55px);
+    background: #fff;
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(45deg);
 }
 
 .cone3 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #fff;
-    transform: rotate(209deg) translate(-25px,-93px);
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(90deg);
+    background: red;
 }
 
 .cone4 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    /* border-top: 100px solid #ff63c9; */
-    border-top: 100px solid #05009b;
-    transform: rotate(105deg) translate(48px,-62px);
-
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(135deg);
+    background: white;
 }
 
 .cone5 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #fff;
-    transform: rotate(52deg) translate(39px,-19px);
-
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(180deg);
+    background: red;
 }
 
 .cone6 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #ca0000;
-    transform: rotate(156deg) translate(20px,-96px);
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(225deg);
+    background: white;
 }
 
 .cone7 {
-    border-right: 50px solid transparent;
-    border-left: 50px solid transparent;
-    border-top: 100px solid #fff;
-    transform: rotate(-48deg) translate(-37px,-11px);
-    z-index: -1;
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(270deg);
+    background: red;
 }
 
-/* .contain-rulette { */
-/*     height: 45vh; */
-/*     width: 60vw; */
-/*     display: grid; */
-/*     justify-items: center; */
-/*     grid-template-columns: 1fr; */
-/*     grid-template-rows: 1fr; */
-/*     background: #ffb300; */
-
-/* } */
-
-/* .container1 .container2 .container3 { */
-/*     display: grid; */
-/*     grid-template-columns: 1fr; */
-/*     grid-template-rows: 1fr; */
-/*     height: 4vh; */
-/*     width: 4vw; */
-/* } */
-
-/* .cone { */
-/*     border-right: 80px solid transparent; */
-/*     border-left: 80px solid transparent; */
-/*     border-top: 300px solid #ff63c9; */
-/*     border-radius:50%; */
-/* } */
-
-/* .rotate1 { */
-/*     transform: matrix(0.9, 0.5, -0.5, 0.9,74,-283); */
-/*      border-top: 300px solid #c604c3; */
-/* } */
-
-/* .rotate2 { */
-/*      transform: matrix(0.9, 0.5, -0.5, 0.9,74,-283); */
-/*      border-top: 300px solid lightblue; */
-/* } */
+.cone8 {
+    clip-path: polygon(50% 0, 50% 50%, 0 0);
+    transform: rotate(315deg);
+    background: white;
+}
