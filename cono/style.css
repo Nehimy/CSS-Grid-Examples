@@ -1,5 +1,6 @@
 body {
-    background: #3c446a;
+    /* background: #3c446a; */
+    background: #36d0ff;
     margin: 0;
 }
 
@@ -18,7 +19,7 @@ body {
 }
 
 .container-title {
-    color:#ffb74a;
+    color:#ffd089;;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
@@ -30,13 +31,29 @@ body {
     height: 50vh;
     width: 50vw;
     display: grid;
-    align-items: center;
+    align-items: end;
     justify-items: center;
-    align-content: center;
+    align-content: end;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    /* grid-template-columns: repeat(4,200px); */
-    /* grid-template-rows: minmax(100px, 1fr); */
+
+    /* animation: rotate 8s infinite; */
+}
+
+.contain-cone .container-move{
+    display: grid;
+    /* animation: rotate 8s infinite; */
+}
+@keyframes rotate {
+    /* 0% { */
+    /*     transform: rotate(0deg); */
+    /* } */
+    50% {
+        transform: rotate(360deg);
+    }
+    /* 100%{ */
+    /*     transform: rotate(0deg); */
+    /* } */
 }
 
 .container-element .container-title {
@@ -55,6 +72,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    /* animation: rotate 8s infinite; */
 }
 
 .size {
@@ -67,32 +85,56 @@ body {
     grid-row: 1/2;
 }
 .cone1 {
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
     border-top: 100px solid #ca0000;
 
 }
 
 .cone2 {
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
     border-top: 100px solid #05009b;
-    transform: rotate(-90deg) translate(-50px,-50px);
+    transform: rotate(-98deg) translate(-50px,-55px);
 }
 
 .cone3 {
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
     border-top: 100px solid #fff;
-    transform: rotate(180deg) translate(0px,-100px);
+    transform: rotate(209deg) translate(-25px,-93px);
 }
 
 .cone4 {
-    border-right: 70px solid transparent;
-    border-left: 70px solid transparent;
-    border-top: 100px solid #ff63c9;
-    transform: rotate(90deg) translate(50px,-50px);
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    /* border-top: 100px solid #ff63c9; */
+    border-top: 100px solid #05009b;
+    transform: rotate(105deg) translate(48px,-62px);
 
+}
+
+.cone5 {
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 100px solid #fff;
+    transform: rotate(52deg) translate(39px,-19px);
+
+}
+
+.cone6 {
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 100px solid #ca0000;
+    transform: rotate(156deg) translate(20px,-96px);
+}
+
+.cone7 {
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 100px solid #fff;
+    transform: rotate(-48deg) translate(-37px,-11px);
+    z-index: -1;
 }
 
 /* .contain-rulette { */
